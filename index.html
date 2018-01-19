@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>Resolutions RIP</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 
   </head>
 
@@ -28,7 +29,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <a class="navbar-brand" href="index.html">Hopeful Solutions</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -41,26 +42,20 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="post.html">Sample Post</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <header class="masthead" style="background-image: url('img/cover.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Clean Blog</h1>
-              <span class="subheading">A Blog Theme by Start Bootstrap</span>
+              <h1>Hopeful Solutions</h1>
+              <span class="subheading">for your resolutions</span>
             </div>
           </div>
         </div>
@@ -70,64 +65,106 @@
     <!-- Main Content -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-12 col-md-10 mx-auto">
           <div class="post-preview">
-            <a href="post.html">
-              <h2 class="post-title">
-                Man must explore, and this is exploration at its greatest
+            <img class="thumbs" src="https://images.unsplash.com/photo-1496667027335-ab5297dc6ec4?auto=format&fit=crop&w=1350&q=80" alt=""/>
+            <div>
+              <h2 id="smoking" class="post-title">
+                You Want To Stop Smoking?
               </h2>
-              <h3 class="post-subtitle">
-                Problems look mighty small from 150 miles up
-              </h3>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 24, 2017</p>
+              <p class="post-subtitle">
+480,000 people a year die from smoking-related deaths. Plus, if you live in the northern states standing outside in the cold miserable. Also you'll walk around smelling like an ashtray all day.
+Instead, <a href="#drugs"><strong>Pick up a drug habit</strong></a>, less people die from doing hard drugs, Rockstars are know for hard drug use and they're pretty cool. Bonus points if you're a veteran.
+              </p>
+            </div>
+          </div>
+
+          <div id="bar-container">
+            <canvas id="bar" width="400px" height="400px"></canvas>
           </div>
           <hr>
           <div class="post-preview">
-            <a href="post.html">
-              <h2 class="post-title">
-                I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+            <div>
+              <h2 id="drugs" class="post-title">
+                You want to kick your drug habit?
               </h2>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 18, 2017</p>
+              <p class="post-subtitle">
+                 64,000 people a year die from overdoses every year. 
+                 <a href="#drinking"><strong>Try picking up drinking</strong></a>. First of all it's not illegal unless you decide to drive after, but that can be fun too! It's also more fiscally responsible if you buy the cheap shit.
+              </p>
+            </div>
+            <img class="thumbs" src="http://images.buddytv.com/btv_2_505531096_0_1200_10000_-1_/towelie-intervention.jpg" alt=""/>
           </div>
+
+
+
           <hr>
           <div class="post-preview">
-            <a href="post.html">
-              <h2 class="post-title">
-                Science has not yet mastered prophecy
+            <img class="thumbs" src="http://i.telegraph.co.uk/multimedia/archive/02866/cider_2866635b.jpg" alt=""/>
+            <div>
+              <h2 id="drinking" class="post-title">
+                So you want to kick your drinking habit?
               </h2>
-              <h3 class="post-subtitle">
-                We predict too much for the next year and yet far too little for the next ten.
-              </h3>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on August 24, 2017</p>
+              <p class="post-subtitle">
+                88,000 people die a year from having a good fucking time. But we get it, people need livers.
+                <a href="#huffing"><strong>You should try huffing paint</strong></a>, barely anyone dies from huffing paint, so have at it! Plus you can pick up a new art and craft while you're at Hobby Lobby.
+              </p>
+            </div>
           </div>
+
           <hr>
           <div class="post-preview">
-            <a href="post.html">
-              <h2 class="post-title">
-                Failure is not an option
+            <div>
+              <h2 id="huffing" class="post-title">
+                So you want to kick your huffing paint habit?
               </h2>
-              <h3 class="post-subtitle">
-                Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-              </h3>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on July 8, 2017</p>
+              <p class="post-subtitle">
+              125 people die a year from inhaling paint, plus it's a waste of good paint.
+              Explore your social side, <a href="#sex"><strong>try having lots of unprotected sex!</strong></a> Birth control is for squares, and the south is pretty flexible on most things.
+              </p>
+            </div>
+            <img class="thumbs" src="http://i.imgur.com/AJRfBy0.jpg" alt=""/>
           </div>
+
+
+          <h3 style="text-align: center;"> How much more fun?? </h3>
+          <div id="bar-container">
+            <canvas id="pie" width="400" height="400"></canvas>
+          </div>
+
           <hr>
-          <!-- Pager -->
-          <div class="clearfix">
-            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+          <div class="post-preview">
+            <img class="thumbs" src="https://fateclick.com/images/article/20160218192131304.jpg" alt=""/>
+            <div>
+              <h2 id="sex" class="post-title">
+                So you want to cure your nymphomania?
+              </h2>
+              <p class="post-subtitle">
+              You should, STD's are gross, but totally worth it.
+              <a href="#eat"><strong>You should try binge eating</strong></a>. Some studies show that some people like to eat more than they like to have sex, probably. Think of all the great food you've eaten, the dollar scoop chinese buffet, taco bell three times in a row, you know, the good stuff.
+              </p>
+            </div>
           </div>
+
+          <hr>
+          <div class="post-preview">
+            <div>
+              <h2 id="eat" class="post-title">
+                So you want to lose weight?
+              </h2>
+              <p class="post-subtitle">
+                610,000 people die a year from heart disease. Plus, no one likes being out of breath walking to the fridge.
+                <a href="#smoking"><strong>You should pick up smoking</strong></a>, it cuts down cravings, it has zero calories, and it's a great way to meet people. Plus, have you ever seen Mad Men? That shit is so fucking cool. Don Draper is the man.
+              </p>
+            </div>
+            <img class="thumbs" src="http://goqii.com/blog/wp-content/uploads/how-to-stop-binge-eating.jpg" alt=""/>
+          </div>
+
+
+          <div id="bar-container">
+            <canvas id="eating" width="400" height="400"></canvas>
+          </div>
+
         </div>
       </div>
     </div>
@@ -157,7 +194,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://github.com/berto/resolutions-rip">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -165,7 +202,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2017</p>
+            <p class="copyright text-muted">Copyright &copy; Hopeful Resolutions 2018</p>
           </div>
         </div>
       </div>
